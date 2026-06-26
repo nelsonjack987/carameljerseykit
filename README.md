@@ -1,4 +1,4 @@
-# SequenceManager-cdf71a
+# SequenceManager-56d197
 
 A Java SequenceManager utility.
 

